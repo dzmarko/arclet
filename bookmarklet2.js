@@ -1,0 +1,5 @@
+var e, t, n, a, o, i;
+let s = Object.keys(window.ssp("get", "product"))[0],
+  r = window.ssp_key,
+  d = !1;
+(null === (e = window.ssp) || void 0 === e ? void 0 : null === (t = e.config) || void 0 === t ? void 0 : null === (n = t.fitpredictor) || void 0 === n ? void 0 : null === (a = n.api) || void 0 === a ? void 0 : null === (o = a.servers) || void 0 === o ? void 0 : null === (i = o.v4) || void 0 === i ? void 0 : i.url.includes(".dev.")) && (d = !0), r ? window.open("https://" + (d ? "central.dev" : "central") + "22.sspinc.io/products?q[partner_key_eq]=" + r + "&q[partner_product_id_eq]=" + s + "&commit=Filter", "_blank") : window.open("https://" + (d ? "central.dev" : "central") + "22.sspinc.io/products?q[partner_product_id_eq]=" + s + "&commit=Filter", "");
